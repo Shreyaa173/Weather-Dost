@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to bottom, black, rgb(62, 62, 62), #008080);
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(to right, #008080, #232323);
+    margin: 50px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    align: center;
+    text-align: center;
+
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search input{
+    border-radius: 30px;
+    border: none;
+    height: 3rem;
+    width: 20rem;
+    padding-left: 20px;
+    font-size: 1.25rem;
+    color: rgb(41, 41, 41);
+}
+
+.search button{
+    background-color: aliceblue;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.search i{
+    font-size: 1.5rem;    
+    cursor: pointer;
+    color: black;
+}
+
+.weather-icon{
+    margin-top: 20px;
+    height: 250px;
+}
+
+.weather h1{
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 10px
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 20px;
+}
+
+.humidity, .wind{
+    font-size: 25px;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+@media only screen and (max-width: 500px){
+    .card{
+        width: 80%;
+    }
+
+    .search input{
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search button{
+        background-color: aliceblue;
+        border: none;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+    
+    .search i{
+        font-size: 4vw;    
+        cursor: pointer;
+        color: black;
+    }
+
+    .weather-icon{
+        height: 40vw;
+    }
+    
+    .weather h1{
+        font-size: 9vw;
+        font-weight: 500;
+    }
+    
+    .weather h2{
+        font-size: 5vw;
+        font-weight: 500;
+    }
+
+    .details{
+        gap: 4vw;
+    }
+    
+    .col img{
+        width: 7vw;
+    }
+
+    .humidity, .wind{
+        font-size: 4.5vw;
+    }
+
+    .details .name{
+        font-size: 4vw;
+    }
+
+    .details{
+        padding: 0;
+        margin-left: -20px;
+        margin-top: 10px
+    }
+
+}
